@@ -4,15 +4,13 @@ import { useContext } from 'react';
 
 export const ButtonPage = () => {
   const props = useContext(StateContext);
+  const { state } = props;
   const handleClick = () => {
-    props.setState(props.state.pages + 1);
+    props.setState({ ...state, pages: state.pages + 1 });
   };
-  let buttonClassWarp = 'buttonWrap is-hidden';
-  if (props.state.hideButton === false) {
-    buttonClassWarp = 'buttonWrap';
-  }
+
   return (
-    <div className={buttonClassWarp}>
+    <div className={state.hideButton ? 'buttonWrap is-hidden' : 'buttonWrap'}>
       <button type="button" className="Button" onClick={handleClick}>
         Load more
       </button>
@@ -23,4 +21,5 @@ export const ButtonPage = () => {
 ButtonPage.propTypes = {
   state: PropTypes.object,
   setState: PropTypes.func,
+  pages: PropTypes.number,
 };

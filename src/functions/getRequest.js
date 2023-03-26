@@ -36,6 +36,7 @@ export const getRequest = async (prevState, state, setState) => {
       ...state,
       photos: newState.photos,
       hideButton: newState.hideButton,
+      loading: newState.loading,
     });
   } catch (error) {
     setState({ ...state, error: error.message });

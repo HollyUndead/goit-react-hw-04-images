@@ -16,7 +16,7 @@ export const Modal = () => {
     }
   };
 
-  const { largeImageURL, modalActive } = state;
+  const { largeImageUrl, modalActive } = state;
 
   return (
     <div
@@ -24,7 +24,7 @@ export const Modal = () => {
       onClick={handleClick}
     >
       <div className="Modal">
-        <img src={largeImageURL} alt="" />
+        <img src={largeImageUrl} alt="" />
       </div>
     </div>
   );
