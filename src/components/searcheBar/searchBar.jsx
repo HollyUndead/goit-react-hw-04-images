@@ -4,6 +4,8 @@ import { StateContext } from 'components/App';
 const imgForButton = require('../../img/png-transparent-magnifying-glass-computer-icons-investigation-glass-image-file-formats-magnifier.png');
 
 export const SearchBar = () => {
+  const { state, setState } = useContext(StateContext);
+
   const searchPhotos = ev => {
     ev.preventDefault();
     let stringForUrl = ev.target.searchFilter.value.split(' ');
@@ -17,8 +19,6 @@ export const SearchBar = () => {
       pages: 1,
     });
   };
-
-  let { state, setState } = useContext(StateContext);
 
   return (
     <header className="Searchbar">
