@@ -5,18 +5,18 @@ import { useContext, useEffect } from 'react';
 
 export const Modal = () => {
   useEffect(() => {
-    document.addEventListener('keydown', handleClick, false);
+    document.addEventListener('keydown', handleClick);
   }, []);
 
-  const { state, setState } = useContext(StateContext);
+  const { modalActive, setModalActive, state } = useContext(StateContext);
 
   const handleClick = ev => {
     if (ev.target.className === 'Overlay' || ev.key === 'Escape') {
-      setState({ ...state, modalActive: false, largeImageUrl: '' });
+      setModalActive(false);
     }
   };
 
-  const { largeImageUrl, modalActive } = state;
+  const { largeImageUrl } = state;
 
   return (
     <div

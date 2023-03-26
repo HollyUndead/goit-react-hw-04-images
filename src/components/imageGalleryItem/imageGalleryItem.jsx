@@ -5,10 +5,11 @@ import { useContext } from 'react';
 export const ImageGalleryItem = ({ ...props }) => {
   const { largeImageURL, webformatURL, id } = props.photo;
 
-  const { state, setState } = useContext(StateContext);
+  const { state, setState, setModalActive } = useContext(StateContext);
 
   const setForModal = () => {
-    setState({ ...state, largeImageUrl: largeImageURL, modalActive: true });
+    setModalActive(true);
+    setState({ ...state, largeImageUrl: largeImageURL });
   };
 
   return (

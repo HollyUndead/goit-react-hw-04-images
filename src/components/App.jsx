@@ -18,13 +18,13 @@ export const App = () => {
     error: '',
     loading: false,
     largeImageUrl: '',
-    modalActive: false,
     searchFilter: '',
     pages: 1,
     hideButton: true,
   };
 
   const [state, setState] = useState(initialState);
+  const [modalActive, setModalActive] = useState(false);
   const prevState = useRef();
   useEffect(() => {
     prevState.current = state;
@@ -44,7 +44,14 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <StateContext.Provider value={{ state: state, setState: setState }}>
+      <StateContext.Provider
+        value={{
+          state,
+          setState,
+          modalActive,
+          setModalActive,
+        }}
+      >
         <SearchBar />
         <ImageGallery />
         <Loader />
