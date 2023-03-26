@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { StateContext } from 'components/App';
 import PropTypes from 'prop-types';
 import { useContext, useEffect } from 'react';
