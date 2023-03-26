@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-03-image-finder/static/css/main.9ae46148.css",
+    "main.js": "/goit-react-hw-03-image-finder/static/js/main.c171bec0.js",
+    "static/media/png-transparent-magnifying-glass-computer-icons-investigation-glass-image-file-formats-magnifier.png": "/goit-react-hw-03-image-finder/static/media/png-transparent-magnifying-glass-computer-icons-investigation-glass-image-file-formats-magnifier.a1d92723fbdc11e08dfa.png",
+    "index.html": "/goit-react-hw-03-image-finder/index.html",
+    "main.9ae46148.css.map": "/goit-react-hw-03-image-finder/static/css/main.9ae46148.css.map",
+    "main.c171bec0.js.map": "/goit-react-hw-03-image-finder/static/js/main.c171bec0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ae46148.css",
+    "static/js/main.c171bec0.js"
+  ]
+}
