@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-04-images",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://hollyundead.github.io/goit-react-hw-04-images/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
